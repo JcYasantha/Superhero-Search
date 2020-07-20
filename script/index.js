@@ -1,5 +1,6 @@
-//get the superhero details
+const form = document.querySelector('.change-superhero');
 
+//get the superhero details
 const getSuperhero = async (superhero) => {
     const responses = await fetch(`https://superhero-search.p.rapidapi.com/?hero=${superhero}`, {
         "method": "GET",
@@ -12,5 +13,12 @@ const getSuperhero = async (superhero) => {
     const data = await responses.json();
     console.log(data);
 };
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const superhero = form.superhero.value.trim();
+    form.reset();
+});
 
 getSuperhero('deadpool');
