@@ -11,20 +11,17 @@
     </head>
     <body>
         <div class="my-4 mx-auto container">
-            <h1 class="text-muted text-center my-4">Superhero Search</h1>
+            <h3 class="text-muted text-center my-4">Superhero Search</h3>
             <form class="change-superhero my-4 text-center text-muted">
                 <label for="superhero">Enter the superhero name</label>
                 <input type="text" name="superhero" class="form-control p-4">
+                <div class="no-data align-left mt-4"></div>
             </form>
 
-            <div class="card">
-                <img class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <div class="card d-none">
+                <img class="superheroImage"
+                    src="https://via.placeholder.com/480x100.png?text=Loading">
+                <div class="card-body"></div>
             </div>
         </div>
         <script src="script/index.js"></script>
