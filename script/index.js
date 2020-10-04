@@ -54,6 +54,7 @@ const updateUI = (data) => {
         <p><span class="font-weight-bold">Full Name : </span>${data.biography.fullName}</p>
         <p><span class="font-weight-bold">First Appearence : </span>${data.biography.firstAppearance}</p>
         <p><span class="font-weight-bold">Publisher : </span>${data.biography.publisher}</p>
+        <p><span class="font-weight-bold">Occupation : </span>${data.work.occupation}</p>
         <div class="row">
             <div class="col-sm">
                 <p><span class="font-weight-bold">Combat : </span>${data.powerstats.combat}%</p>
