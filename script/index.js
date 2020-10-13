@@ -57,24 +57,74 @@ const updateUI = (data) => {
         <p><span class="font-weight-bold">Occupation : </span>${data.work.occupation}</p>
         <div class="row">
             <div class="col-sm">
-                <p><span class="font-weight-bold">Combat : </span>${data.powerstats.combat}%</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:${data.powerstats.combat}%">
+                  Combat : ${data.powerstats.combat}%
+                </div>
+              </div>
+
+
+                <p></p>
             </div>
+        </div>
+        <div class="row"> 
             <div class="col-sm">
-                <p><span class="font-weight-bold">Durability : </span>${data.powerstats.durability}%</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:${data.powerstats.durability}%">
+                  Durability : ${data.powerstats.durability}%
+                </div>
+              </div>
+
+
+                <p></p>
             </div>
+        </div>
+        <div class="row"> 
             <div class="col-sm">
-                <p><span class="font-weight-bold">Intelligence : </span>${data.powerstats.intelligence}%</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:${data.powerstats.intelligence}%">
+                  Intelligence : ${data.powerstats.intelligence}%
+                </div>
+              </div>
+
+
+                <p></p>
             </div>
         </div>
         <div class="row">  
             <div class="col-sm">
-                <p><span class="font-weight-bold">Power : </span>${data.powerstats.power}%</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:${data.powerstats.power}%">
+                  Power : ${data.powerstats.power}%
+                </div>
+              </div>
+
+              
+                <p></p>
             </div>
+        </div>
+        <div class="row">  
             <div class="col-sm">
-                <p><span class="font-weight-bold">Speed : </span>${data.powerstats.speed}%</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:${data.powerstats.speed}%">
+                Speed : ${data.powerstats.speed}%
+              </div>
             </div>
+
+            
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm">
-                <p><span class="font-weight-bold">Strength : </span>${data.powerstats.strength}%</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:${data.powerstats.strength}%">
+                Strength :  ${data.powerstats.strength}%
+              </div>
+            </div>
+
+            
+                <p></p>
             </div>
         </div>
         
